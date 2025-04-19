@@ -1,3 +1,10 @@
+/*
+	파일명 : assign16.c
+	내용 : rgb 프로그램을 작성하시오. (비트 연산자 사용)
+ 	작성자 : 이승훈
+  	날짜 : 2025.04.18
+   	버전 : v 1.0
+*/
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 
@@ -30,6 +37,6 @@ void RGB()
     value |= green << 8;
     value |= red;
 
-    printf("RGB Ʈ���÷�: %06X", value);
+    printf("RGB Æ®·çÄÃ·¯: %06X", value);
     return ;
 }
