@@ -1,3 +1,10 @@
+/*
+	íŒŒì¼ëª… : assign15.c
+	ë‚´ìš© : í˜„ì°° ë§¤ì… ì‹œ í™˜ìœ¨ í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ë¼.
+ 	ì‘ì„±ì : ì´ìŠ¹í›ˆ
+  	ë‚ ì§œ : 2025.04.18
+   	ë²„ì „ : v 1.0
+*/
 #define _CRT_SECURE_NO_WARNINGS
 #define MRate 1.75
 #include<stdio.h>
@@ -15,18 +22,18 @@ void ExchangeRate()
 {
 	double a, b, c;
 	double result;
-	// a ¸Å¸Å ±âÁØÀ² b È¯Àü¿ì´ëÀ²
-	printf("¿ø/´Ş·¯ ¸Å¸Å±âÁØ·ü? ");
+	// a ë§¤ë§¤ ê¸°ì¤€ìœ¨ b í™˜ì „ìš°ëŒ€ìœ¨
+	printf("ì›/ë‹¬ëŸ¬ ë§¤ë§¤ê¸°ì¤€ë¥ ? ");
 	scanf("%lf", &a);
-	printf("È¯Àü¿ì´ëÀ²(0~100%)? ");
+	printf("í™˜ì „ìš°ëŒ€ìœ¨(0~100%)? ");
 	scanf("%lf", &b);
 
 	result = ExchangeRateCalCulate(a, b);
-	printf("´Ş·¯ »ì ¶§ È¯À²Àº %lfÀÔ´Ï´Ù\n", result);
-	printf("±¸ÀÔÇÒ ´Ş·¯(USD)? ");
+	printf("ë‹¬ëŸ¬ ì‚´ ë•Œ í™˜ìœ¨ì€ %lfì…ë‹ˆë‹¤\n", result);
+	printf("êµ¬ì…í•  ë‹¬ëŸ¬(USD)? ");
 	scanf(" %lf", &c );
 
-	printf("USD %.2lf »ì ¶§ ==> KRW %.2lf ", c, c * (1.0 + result)); 
+	printf("USD %.2lf ì‚´ ë•Œ ==> KRW %.2lf ", c, c * (1.0 + result)); 
 	return;
 }
 
